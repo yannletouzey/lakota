@@ -68,7 +68,7 @@
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.61) 0%, rgb(184 184 200 / 70%) 13%, rgb(139 142 155) 32%, rgb(211 246 253) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#87EBFF", GradientType=0);
   }
-  & > img {
+  & > .img {
     height: 100%;
     width: 100%;
     object-fit: cover;

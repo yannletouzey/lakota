@@ -25,7 +25,10 @@ export default function Home() {
       >
         <div className={styles["bg-wrapper"]}>
           <motion.div className={styles["bg-img"]} style={{ scale, opacity, transformOrigin: 'bottom center' }}>
-            <img
+            <Image
+              className={styles.img}
+              width={1000}
+              height={1000}
               src="/img/main.jpg"
               alt=""
             />
