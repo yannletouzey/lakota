@@ -1,0 +1,118 @@
+.navbar {
+  --li-height: 3rem;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: calc(0px - var(--width-navbar));
+  width: var(--width-navbar); height: 100vh;
+  background-color: var(--bg-color-footer);
+  transition: right 0.3s ease-in-out;
+  background-color: #000;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      align-items: center;
+    }
+    li {
+      height: calc(var(--li-height) * 1.5);
+      list-style: none;
+      position: relative;
+      @media screen and (max-width: 800px) {
+        width: 80%;
+      }
+      a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: var(--color-text-white);
+        text-decoration: none;
+      }
+      @media screen and (max-width: 800px) {
+        &:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          width: calc(100% - 4rem);
+          height: 0.5px;
+          background-color: #fff;
+          left: 50%;
+          translate: -50% 0;
+        }
+      }
+    }
+  }
+}
+.current-link {
+  color: var(--color-text);
+  position: relative;
+}
+.current-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  border-radius: 50%;
+  translate: -50% -50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid rgb(244, 241, 241);
+  background-color: var(--bg-color-footer);
+}
+@media screen and (min-width: 800px) {
+  .navbar {
+    width: auto;
+    height: var(--header-height);
+    background-color: transparent;
+    border: none;
+    right: 0;
+    ul {
+      align-items: center;
+      flex-direction: row;
+      padding: 0;
+      li, li:first-child {
+        border: none;
+        height: var(--li-height);
+        .link {
+          position: relative;
+          padding: 0 1rem;
+          color: var(--color-text);
+        }
+
+        .link:not(.current-link)::after {
+          content: '';
+          position: absolute;
+          top: 2.2rem;
+          left: 1rem;
+          height: 2px;
+          width: calc(100% - 2rem);
+          background-color: var(--bg-color-black);
+          transform: scaleX(0);
+          transform-origin: right center;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .link:not(.current-link):hover::after {
+          transform: scaleX(1);
+          transform-origin: left center;
+        }
+      }
+    }
+  }
+  .current-link::after {
+    content: '';
+    color: var(--color-text);
+    position: absolute;
+    top: 2.2rem;
+    left: 50%;
+    border-radius: 0;
+    border: none;
+    translate: -50% 0;
+    width: calc(100% - 2rem);
+    height: 2px;
+    background-color: var(--bg-color-black);
+  }
+}

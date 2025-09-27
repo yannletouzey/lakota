@@ -1,0 +1,64 @@
+.menu-button {
+  --w-btn-menu: 1.6rem;
+  --h-btn-menu: 1.6rem;
+  position: absolute;
+  right: 1rem;
+  z-index: 101;
+  border: none;
+  width: var(--w-btn-menu);
+  height: var(--h-btn-menu);
+  transition: rotate 0.3s ease-in-out, translate 0.3s ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #000;
+  mix-blend-mode: difference;
+  .span {
+    width: var(--w-btn-menu);
+    height: 0.1rem;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: var(--w-btn-menu);
+      height: 0.1rem;
+      background-color: #fff;
+      mix-blend-mode: difference;
+      transition: top 0.3s ease-in-out, rotate 0.3s ease-in-out;
+      left: 50%;
+      translate: -50% 0;
+    }
+    &::before {
+      top: -0.4rem;
+    }
+    &::after {
+      top: 0.4rem;
+    }
+  }
+}
+.menu-button.active {
+  rotate: 360deg;
+  .span {
+    width: 0;
+    &::before {
+      top: 0;
+      rotate: 45deg;
+    }
+    &::after {
+      top: 0;
+      rotate: -45deg;
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .menu-button {
+    display: none;
+  }
+}
