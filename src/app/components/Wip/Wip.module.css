@@ -1,0 +1,58 @@
+.wip-text {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+}
+.wip-point {
+  position: absolute;
+  translate: 10px 0px;
+  opacity: 1;
+  transition: translate 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.wip-point:nth-child(1) {
+  animation: op-point-one 1s ease-in-out infinite;
+}
+.wip-point:nth-child(2) {
+  translate: 20px 0px;
+  animation: op-point-two 1s 0.1s ease-in-out infinite;
+}
+.wip-point:nth-child(3) {
+  translate: 30px 0px;
+  animation: op-point-three 1s 0.2s ease-in-out infinite;
+}
+@keyframes op-point-one {
+  0%, 30% {
+    translate: 10px 0px;
+  }
+  48%, 52% {
+    translate: 10px -10px;
+  }
+  70%, 100% {
+    translate: 10px 0px;
+  }
+}
+@keyframes op-point-two {
+  0%, 30% {
+    translate: 20px 0px;
+  }
+  48%, 52% {
+    translate: 20px -10px;
+  }
+  70%, 100% {
+    translate: 20px 0px;
+  }
+}
+@keyframes op-point-three {
+  0%, 30% {
+    translate: 30px 0px;
+  }
+  48%, 52% {
+    translate: 30px -10px;
+  }
+  70%, 100% {
+    translate: 30px 0px;
+  }
+}

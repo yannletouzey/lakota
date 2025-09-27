@@ -1,5 +1,6 @@
 import styles from "./Sitemap.module.css";
 import { routes } from "../../data";
+import Wip from "../components/Wip";
 
 export default function Sitemap() {
   return (
@@ -12,6 +13,7 @@ export default function Sitemap() {
           </li>
         ))}
       </ul>
+      <Wip />
     </div>
   );
 };
