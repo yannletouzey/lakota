@@ -1,3 +1,4 @@
+
 import styles from "./Events.module.css";
 import Image from "next/image";
 import { events } from "../../data";
@@ -21,6 +22,9 @@ export default function Events() {
             </div>
           </article>
         ))}
+        <aside>
+          <p className={styles.text}>A venir</p>
+        </aside>
       </section>
     </div>
   );
