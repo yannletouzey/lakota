@@ -27,10 +27,13 @@ export default function Home() {
           <motion.div className={styles["bg-img"]} style={{ scale, opacity, transformOrigin: 'bottom center' }}>
             <Image
               className={styles.img}
-              width={1000}
-              height={1000}
               src="/img/main.jpg"
               alt=""
+              fill
+              priority
+              onLoadingComplete={() =>
+                window.requestAnimationFrame(() => window.dispatchEvent(new Event('resize')))
+              }
             />
           </motion.div>
         </div>
