@@ -7,8 +7,11 @@ export default function Events() {
     <div className={styles.events}>
       <h1 className={styles.title}>Evenements</h1>
       <section>
-        {events.map((event) => (
-          <article key={event.id} className={styles.article}>
+        {events.map((event, index) => (
+          <article 
+            key={event.id} 
+            className={`${styles.article} ${index === 0 ? styles["first-article"] : ""}`}
+          >
             <h2 className={styles.title}>{event.title}</h2>
             <div className={styles.content}>
               <div className={styles["img-container"]}>
