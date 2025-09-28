@@ -12,7 +12,7 @@ export default function Events() {
             key={event.id} 
             className={`${styles.article} ${index === 0 ? styles["first-article"] : ""}`}
           >
-            <h2 className={styles.title}>{event.title}</h2>
+            <h2 className={styles.subtitle}>{event.title} <span className={styles.postDate}>Evenement du <strong>{event.date}</strong></span></h2>
             <div className={styles.content}>
               <div className={styles["img-container"]}>
                 <Image className={styles.img} src={event.img[0].src} alt={event.title} width={500} height={500} />
