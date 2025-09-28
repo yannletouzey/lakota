@@ -7,4 +7,24 @@
   align-items: center;
   background-color: var(--bg-color);
   padding: 0 1rem;
+  & svg {
+    width: 3rem;
+    position: relative;
+    rotate: 0 1 0 180deg;
+    & path {
+      fill: transparent;
+      stroke: black;
+      stroke-width: 3;
+    }
+  }
+}
+
+.path {
+  stroke-dasharray: 1038.0909423828125;
+  stroke-dashoffset: 0;
+  animation: strokeLetter 10s 0s ease-in-out infinite;
+}
+@keyframes strokeLetter {
+  from, to { stroke-dashoffset: 0; }
+  49%, 51% { stroke-dashoffset: 1038.0909423828125; }
 }
