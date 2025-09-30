@@ -37,6 +37,21 @@ export const Footer = () => {
       <ul className={styles.links}>
         <li>
           <Link 
+            href="/about"
+            className={isActive("/about") ? `${styles.link} ${styles["current-link"]}` : `${styles.link}`}
+            onClick={(e) => {
+              e.preventDefault()
+              setMenuButtonIsActive(false)         
+              router.push("/about", {
+                onTransitionReady: pageanimation
+              })
+            }}
+          >
+            A propos
+          </Link>
+        </li>
+        <li>
+          <Link 
             href="/contact"
             className={isActive("/contact") ? `${styles.link} ${styles["current-link"]}` : `${styles.link}`}
             onClick={(e) => {

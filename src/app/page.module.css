@@ -80,15 +80,20 @@
   }
 }
 .content {
-  width: 100vw; min-height: calc(100vh - var(--header-height));
+  width: 100vw;
   padding: 2rem 1rem;
-  @media screen and (min-width: 768px) {
-    padding: 2rem 4rem;
-  }
-  .article, .aside {
-    padding: 1rem 0.5rem;
+  .section {
+    & h2 {
+      margin: 1rem 0;
+    }
     & h3 {
       margin: 0 0 0.5rem;
+    }
+    & > div {
+      margin: 0.5rem;
+      & article {
+        margin-bottom: 1rem;
+      }
     }
   }
   & p {
@@ -105,5 +110,10 @@
     & li {
       margin: 0.5rem 0;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 2rem 4rem;
   }
 }

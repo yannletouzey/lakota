@@ -17,7 +17,7 @@ export default function Home() {
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
-    <div className={styles.home}>
+    <>
       <div
         ref={ref}
         className={styles["hero-home"]}
@@ -38,7 +38,6 @@ export default function Home() {
           </motion.div>
         </div>
         <div className={styles["hero-text"]}>
-          {/* <h1><span>Association lakota</span> <span>nouvelle vision</span></h1> */}
           <h1>Ensemble, donnons un nouvel avenir à <span>Lakota 🌱</span></h1>
           <p>
             L’Association Lakota Nouvelle Vision agit pour l’éducation, la santé et la solidarité
@@ -47,63 +46,54 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className={styles.content} aria-labelledby="association-title">
-        <h2 id="association-title">Ensemble, faisons grandir l’espoir à Lakota 🌱</h2>
+      {/* SECTION MISSIONS PRINCIPALES */}
+      <div className={styles.content}>
+        <section aria-labelledby="missions-title" className={`${styles.missions} ${styles.section}`}>
+          <h2 id="missions-title">Nos missions principales</h2>
+          <div className={styles["missions-grid"]}>
+            <article>
+              <h3>Éducation</h3>
+              <p>Offrir aux jeunes, particulièrement aux filles, des opportunités d’apprentissage et d’épanouissement.</p>
+            </article>
+            <article>
+              <h3>Santé & Bien-être</h3>
+              <p>Contribuer à l’accès aux soins, à la prévention sanitaire et au soutien psychologique.</p>
+            </article>
+            <article>
+              <h3>Solidarité & Habitat</h3>
+              <p>Améliorer les conditions de vie et renforcer le lien social dans la communauté.</p>
+            </article>
+            <article>
+              <h3>Mobilisation & Partenariats</h3>
+              <p>Créer des synergies locales et internationales pour un impact durable.</p>
+            </article>
+          </div>
+        </section>
 
-        <article className={styles.article} aria-labelledby="presentation-title">
-          <h3 id="presentation-title">Qui nous sommes</h3>
+        {/* SECTION VALEURS / CONVICTIONS */}
+        <section aria-labelledby="convictions-title" className={`${styles.convictions} ${styles.section}`}>
+          <h2 id="convictions-title">Nos convictions</h2>
           <p>
-            L’Association Lakota Nouvelle Vision, fondée par des femmes et des hommes originaires
-            de Lakota, est née d’un rêve partagé : voir notre ville s’épanouir et offrir à chaque
-            enfant, chaque femme et chaque famille une vie digne et pleine d’opportunités. 
-            Depuis 2019, nous agissons en France et en Côte d’Ivoire pour mobiliser les énergies,
-            renforcer la solidarité et initier des projets concrets au service de la communauté.
-          </p>
-        </article>
-
-        <article className={`${styles.article} ${styles.beliefs}`} aria-labelledby="beliefs-title">
-          <h3 id="beliefs-title">Nos convictions</h3>
-          <p>
-            Nous croyons profondément que le changement durable repose sur l’engagement collectif.
-            Trois valeurs guident chacune de nos actions :
+            Nous croyons que chaque action compte et que le changement durable repose sur l’engagement collectif :
           </p>
           <ul>
-            <li>✨ <strong>L’éducation</strong> change des vies et ouvre l’avenir</li>
-            <li>✨ <strong>La solidarité</strong> sauve des familles et renforce le lien social</li>
-            <li>✨ <strong>L’action collective</strong> transforme une communauté entière</li>
+            <li>✨ L’éducation change des vies et ouvre l’avenir</li>
+            <li>✨ La solidarité sauve des familles et renforce le lien social</li>
+            <li>✨ L’action collective transforme une communauté entière</li>
           </ul>
-        </article>
+        </section>
 
-        <article className={styles.article} aria-labelledby="actions-title">
-          <h3 id="actions-title">Pourquoi nous agissons</h3>
+        {/* SECTION APPEL À L’ACTION */}
+        <aside aria-labelledby="cta-title" className={`${styles.cta} ${styles.section}`}>
+          <h2 id="cta-title">Rejoignez-nous</h2>
           <p>
-            Lakota fait face à des défis importants : un accès limité aux soins, un taux
-            d’alphabétisation encore fragile et des conditions de vie précaires. Chaque projet
-            que nous portons – qu’il s’agisse de scolariser une jeune fille, de soutenir une
-            famille en difficulté ou d’améliorer l’accès à l’eau et à la santé – est une pierre
-            posée pour bâtir un avenir meilleur. 
+            Devenez membre, faites un don ou participez à nos projets pour construire un nouvel avenir à Lakota. Chaque geste compte !
           </p>
-          <p>
-            Notre ambition est claire : impulser une dynamique locale capable de transformer la
-            vie quotidienne tout en préparant les générations futures à prendre part au
-            développement de leur ville.
-          </p>
-        </article>
-
-        <aside className={styles.aside} aria-labelledby="join-title">
-          <h3 id="join-title">Rejoignez-nous</h3>
-          <p>
-            Rejoindre notre association, c’est participer à une aventure humaine où la chaleur du
-            cœur compte autant que l’efficacité de l’action. Vous pouvez contribuer de plusieurs
-            manières : en devenant membre, en faisant un don, en relayant nos projets ou en
-            apportant vos compétences. 
-          </p>
-          <p>
-            Ensemble, nous pouvons donner un nouveau souffle à Lakota et offrir une vision
-            d’avenir à toute une génération.
-          </p>
+          <div className={styles["cta-buttons"]}>
+            <a href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer" className={styles.button}>Faire un don</a>
+          </div>
         </aside>
-      </section>
-    </div>
+      </div>
+    </>
   );
 }
