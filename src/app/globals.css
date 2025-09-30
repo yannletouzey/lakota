@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "GOTHAM-BOLD";
-  src: url("/fonts/GOTHAM-BOLD.ttf");
+  font-family: "gotham-bold";
+  src: url("/fonts/gotham-bold.ttf");
 }
 @font-face {
-  font-family: "Gotham-Light";
-  src: url("/fonts/Gotham-Light.otf");
+  font-family: "gotham-Light";
+  src: url("/fonts/gotham-Light.otf");
 }
 
 :root {

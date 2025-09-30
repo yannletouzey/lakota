@@ -38,12 +38,12 @@
   text-transform: uppercase;
 }
 .title div span:first-child {
-  font-family: "GOTHAM-BOLD";
+  font-family: "gotham-bold";
   font-size: 1.52rem;
   height: 20px;
 }
 .title div span:last-child {
-  font-family: "Gotham-Light";
+  font-family: "gotham-Light";
   font-size: 0.7rem;
   height: 12px;
 }
