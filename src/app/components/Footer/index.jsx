@@ -20,7 +20,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.networks}>
-        <h2>Rejoignez-nous</h2>
+        <h3 className={styles.title}>Rejoignez-nous</h3>
         <ul>
           <li>
             <a
@@ -29,6 +29,15 @@ export const Footer = () => {
               rel="noopener noreferrer"
             >
               <img src="/logos/facebook.png" alt="Logo du site internet Facebook" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lakota_nouvelle_vision/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/logos/instagram.png" alt="Logo du site internet Instagram" />
             </a>
           </li>
         </ul>

@@ -1,1 +1,2 @@
 <a href="https://www.flaticon.com/fr/icones-gratuites/facebook" title="facebook icônes">Facebook icônes créées par Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/fr/icones-gratuites/logo-instagram" title="logo instagram icônes">Logo instagram icônes créées par Pixel perfect - Flaticon</a>
