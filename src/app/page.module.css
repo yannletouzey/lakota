@@ -22,24 +22,26 @@
     --color: #000;
   }
   & h1 {
-    text-align: center;
     color: var(--color);
     text-transform: uppercase;
-    & span {
-      display: block;
-      &:nth-child(1) {
-        font-size: clamp(1.6rem, 8vw, 4rem);
-      }
-      &:nth-child(2) {
-        color: transparent;
-        -webkit-text-stroke: 1.5px var(--color);
-        font-size: clamp(2rem, 9.85vw, 4.95rem);
-        @media screen and (min-width: 800px) {
-          -webkit-text-stroke: 2px var(--color);
-        }
-      }
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    padding-bottom: clamp(0.5rem, 2vw, 1rem);
+    & span:first-child {
+      text-wrap: nowrap;
     }
   }
+  & p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+}
+.hero-text {
+  position: sticky;
+  top: var(--header-height);
+  width: 90%;
+  max-width: 60rem;
+  padding: clamp(1.5rem, 3vw, 3rem);
+  border-radius: 1rem;
+  background-color: #ffffff87;
 }
 .bg-wrapper {
   position: absolute;

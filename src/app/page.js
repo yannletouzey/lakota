@@ -37,8 +37,14 @@ export default function Home() {
             />
           </motion.div>
         </div>
-        <div style={{ position: 'sticky', top: `4rem` }}>
-          <h1><span>Association lakota</span> <span>nouvelle vision</span></h1>
+        <div className={styles["hero-text"]}>
+          {/* <h1><span>Association lakota</span> <span>nouvelle vision</span></h1> */}
+          <h1>Ensemble, donnons un nouvel avenir à <span>Lakota 🌱</span></h1>
+          <p>
+            L’Association Lakota Nouvelle Vision agit pour l’éducation, la santé et la solidarité
+            à Lakota, en Côte d’Ivoire, afin de construire un avenir meilleur pour toute une
+            communauté.
+          </p>
         </div>
       </div>
       <section className={styles.content} aria-labelledby="association-title">
