@@ -16,11 +16,11 @@ export const metadata = {
   openGraph: {
     title: "Association Lakota | Éducation et bien-être des jeunes filles",
     description: "Nous militons en Côte d’Ivoire pour l’accès à l’éducation, la protection et l’épanouissement des jeunes filles.",
-    url: "https://ton-site.org",
+    url: "https://lakota.vercel.app/",
     siteName: "Association lakota nouvelle vision",
     images: [
       {
-        url: "https://ton-site.org/og-image.jpg", // image de partage (1200x630 recommandé)
+        url: "https://lakota.vercel.app/main.jpg",
         width: 1200,
         height: 630,
         alt: "Association pour l’éducation et le bien-être des jeunes filles en Côte d’Ivoire",
@@ -33,10 +33,10 @@ export const metadata = {
     card: "summary_large_image",
     title: "Association Lakota | Éducation et bien-être des jeunes filles",
     description: "Association ivoirienne dédiée à l’éducation et au bien-être des jeunes filles, pour construire une société plus juste et inclusive.",
-    images: ["https://ton-site.org/og-image.jpg"], // même image que pour Open Graph
+    images: ["https://lakota.vercel.app/main.jpg"],
   },
   icons: {
-    icon: 'http://localhost:3000/favicon.ico',
+    icon: 'https://lakota.vercel.app/favicon.ico',
   },
 };
 
