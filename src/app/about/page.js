@@ -12,7 +12,7 @@ export default function About() {
       </h1>
       <section className={styles.content}>
         <header>
-          <h2 
+          <h2
             id="association-title" 
             className={styles["association-title"]} 
             aria-labelledby="association-title"
@@ -20,7 +20,7 @@ export default function About() {
             Association Lakota Nouvelle Vision
           </h2>
         </header>
-        <article>
+        <article id="who-we-are" className={styles.anchor}>
           <h3 id="presentation-title">Qui nous sommes</h3>
           <p>
             <strong>L’Association Lakota Nouvelle Vision</strong>, fondée par des femmes et des hommes originaires
@@ -31,19 +31,7 @@ export default function About() {
           </p>
         </article>
 
-        <article aria-labelledby="beliefs-title">
-          <h3 id="beliefs-title">Nos convictions</h3>
-          <p>
-            Nous croyons profondément que le changement durable repose sur l’engagement collectif. Trois valeurs guident chacune de nos actions :
-          </p>
-          <ul>
-            <li>✨ L’éducation change des vies et ouvre l’avenir</li>
-            <li>✨ La solidarité sauve des familles et renforce le lien social</li>
-            <li>✨ L’action collective transforme une communauté entière</li>
-          </ul>
-        </article>
-
-        <article aria-labelledby="actions-title">
+        <article aria-labelledby="actions-title" id="why-we-act" className={styles.anchor}>
           <h3 id="actions-title">Pourquoi nous agissons</h3>
           <p>
             Lakota fait face à des défis importants : un accès limité aux soins, un taux
@@ -58,24 +46,29 @@ export default function About() {
             développement de leur ville.
           </p>
         </article>
-
-        <aside aria-labelledby="join-title">
-          <h3 id="join-title">Rejoignez-nous</h3>
-          <p>
-            Rejoindre notre association, c’est participer à une aventure humaine où la chaleur du
-            cœur compte autant que l’efficacité de l’action. Vous pouvez contribuer de plusieurs
-            manières : en devenant membre, en faisant un don, en relayant nos projets ou en
-            apportant vos compétences. 
-          </p>
-          <p>
-            Ensemble, nous pouvons donner un nouveau souffle à Lakota et offrir une vision
-            d’avenir à toute une génération.
-          </p>
-        </aside>
+      </section>
+      <section className={styles.content}>
+        <header>
+          <h2 
+            id="our-history" 
+            className={`${styles["history-title"]} ${styles.anchor}`} 
+            aria-labelledby="history-title"
+          >
+            Notre histoire
+          </h2>
+        </header>
+        <article>
+          <p>En référence à leurs expériences personnelles en tant que filles issues de familles modestes et ont traversées des épreuves difficiles, un groupe de femmes originaires du département de Lakota (dans la région du Loh Djiboua en Côte d’Ivoire) ont créé <strong>L'Association Lakota Nouvelle Vision</strong> (A-LNV) en France, le 18 septembre 2019, sous le N°W941016133, puis enregistrée en Côte d’Ivoire sous le récépissé N°3478/MIS/DGAT/DAG/SDVA.</p>
+          <p>Le but visé est d’encadrer, d’orienter et d’assister les jeunes filles, et les personnes en situation de vulnérabilité.</p>
+          <p>Ces femmes s’étant battues pour avoir une situation plus favorable, ont créé cette communauté de solidarité capable de mobiliser toutes leurs synergies et leurs énergies, partageant la même vision.</p>
+          <p>Par la suite, plusieurs femmes de différentes origines nous ont rejoins dans ce noble combat.</p>
+          <p>Cet engouement a fait naître <strong>L'Association Lakota Nouvelle Vision</strong> en France, notre association compte aujourd’hui plus de 200 membres à travers le monde et reste ouverte à de nouvelles adhésions.</p>
+          <p>Toutes ces femmes sont des bénévoles dans la gestion de l’association.</p>
+        </article>
       </section>
       <section className={`${styles.content} ${styles["history-cecile"]}`} aria-labelledby="histoire-cecile">
         <header>
-          <h2 id="history-cecile">L’histoire de Cécile DOGO</h2>
+          <h2 id="cecile-dogo-story" className={styles.anchor}>L’histoire de Cécile DOGO</h2>
         </header>
 
         <article>

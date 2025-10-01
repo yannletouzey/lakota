@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lakota.vercel.app/
+
+# Sitemaps
+Sitemap: https://lakota.vercel.app/sitemap.xml

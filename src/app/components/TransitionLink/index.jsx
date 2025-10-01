@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { useTransitionRouter } from 'next-view-transitions'
-import { pageAnimation } from "../../utils";
+import { pageanimation } from "../../../pageanimation";
 
 export default function TransitionLink({ props }) {
   const router = useTransitionRouter()
@@ -11,7 +11,7 @@ export default function TransitionLink({ props }) {
       onClick={(e) => {
         e.preventDefault();
         router.push(props.href, {
-          onTransitionReady: pageAnimation
+          onTransitionReady: pageanimation
         });
       }}
     >

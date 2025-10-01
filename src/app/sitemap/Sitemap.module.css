@@ -1,6 +1,20 @@
-.about {
-
+.sitemap {
+  & a {
+    padding: 0.5rem 1rem;
+  }
 }
 .title {
-  
+  text-align: center;
+}
+.sitemap-list {
+  padding: 1rem;
+}
+.sitemap-item {
+  padding: 0.5rem 0.5rem 0;
+  & ul {
+    padding: 0.5rem;
+    & li {
+      margin: 0.5rem;
+    }
+  }
 }

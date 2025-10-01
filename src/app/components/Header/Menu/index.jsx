@@ -40,22 +40,24 @@ export default function Menu() {
     >
       <ul>
         {routes.map((r) => (
-          <li key={r.name}>
-            <Link
-              href={r.href}
-              className={isActive(r.href) ? 'link current-link' : 'link'}
-              aria-current={isActive(r.href) ? 'page' : undefined}
-              onClick={(e) => {
-                e.preventDefault()
-                setMenuButtonIsActive(false)                
-                router.push(r.href, {
-                  onTransitionReady: pageanimation
-                })
-              }}
-            >
-              {r.name}
-            </Link>
-          </li>
+          r.type === 'Header' && (
+            <li key={r.name}>
+              <Link
+                href={r.href}
+                className={isActive(r.href) ? 'link current-link' : 'link'}
+                aria-current={isActive(r.href) ? 'page' : undefined}
+                onClick={(e) => {
+                  e.preventDefault()
+                  setMenuButtonIsActive(false)                
+                  router.push(r.href, {
+                    onTransitionReady: pageanimation
+                  })
+                }}
+              >
+                {r.name}
+              </Link>
+            </li>
+          )
         ))}
       </ul>
     </nav>

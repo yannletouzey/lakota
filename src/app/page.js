@@ -49,7 +49,7 @@ export default function Home() {
 
       <div className={styles.content}>
         <section aria-labelledby="missions-title" className={`${styles.missions} ${styles.section}`}>
-          <h2 id="missions-title">Nos missions principales</h2>
+          <h2 id="main-missions" className={styles.anchor}>Nos missions principales</h2>
           <div className={styles["missions-grid"]}>
             <article>
               <h3>Éducation</h3>
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         <section aria-labelledby="convictions-title" className={`${styles.convictions} ${styles.section}`}>
-          <h2 id="convictions-title">Nos convictions</h2>
+          <h2 id="our-convictions" className={styles.anchor}>Nos convictions</h2>
           <p>
             Nous croyons que chaque action compte et que le changement durable repose sur l’engagement collectif :
           </p>
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         <aside aria-labelledby="cta-title" className={`${styles.cta} ${styles.section}`}>
-          <h2 id="cta-title">Rejoignez-nous</h2>
+          <h2 id="join-us" className={styles.anchor}>Rejoignez-nous</h2>
           <p>
             Devenez membre, faites un don ou participez à nos projets pour construire un nouvel avenir à Lakota. Chaque geste compte !
           </p>
