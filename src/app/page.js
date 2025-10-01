@@ -46,7 +46,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/* SECTION MISSIONS PRINCIPALES */}
+
       <div className={styles.content}>
         <section aria-labelledby="missions-title" className={`${styles.missions} ${styles.section}`}>
           <h2 id="missions-title">Nos missions principales</h2>
@@ -70,7 +70,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SECTION VALEURS / CONVICTIONS */}
         <section aria-labelledby="convictions-title" className={`${styles.convictions} ${styles.section}`}>
           <h2 id="convictions-title">Nos convictions</h2>
           <p>
@@ -83,7 +82,6 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* SECTION APPEL À L’ACTION */}
         <aside aria-labelledby="cta-title" className={`${styles.cta} ${styles.section}`}>
           <h2 id="cta-title">Rejoignez-nous</h2>
           <p>
