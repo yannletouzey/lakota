@@ -27,7 +27,7 @@ export default function Home() {
           <motion.div className={styles["bg-img"]} style={{ scale, opacity, transformOrigin: 'bottom center' }}>
             <Image
               className={styles.img}
-              src="/img/main.jpg"
+              src="/img/hero.png"
               alt=""
               fill
               priority
