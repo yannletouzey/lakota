@@ -18,6 +18,10 @@
   height: 1px;
   background-color: #fff;
 }
+.copyright {
+  color: #fff;
+  padding: 1rem;
+}
 .networks {
   display: flex;
   flex-direction: row;
@@ -89,7 +93,7 @@
   transform: scaleX(1);
   transform-origin: left center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .footer {
     flex-direction: row;
   }

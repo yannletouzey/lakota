@@ -19,6 +19,10 @@ export const Footer = () => {
 
   return (
     <footer className={styles.footer}>
+      <div className={styles.copyright}>
+        <p>© Association Lakota Nouvelle Vision 2025</p>
+      </div>
+      <span className={styles["footer-separating-line"]}></span>
       <div className={styles.networks}>
         <h3 className={styles.title}>Rejoignez-nous</h3>
         <ul>
