@@ -16,7 +16,7 @@
     margin-right: 0.8rem;
     & path {
       fill: transparent;
-      stroke: rgba(136, 176, 79, 1);
+      stroke: var(--lakota-green);
       stroke-width: 3;
     }
   }

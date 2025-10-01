@@ -88,7 +88,7 @@ export default function Home() {
             Devenez membre, faites un don ou participez à nos projets pour construire un nouvel avenir à Lakota. Chaque geste compte !
           </p>
           <div className={styles["cta-buttons"]}>
-            <a href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer" className={styles.button}>Faire un don</a>
+            <a className={styles["donation-button"]} href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
           </div>
         </aside>
       </div>
