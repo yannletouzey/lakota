@@ -12,7 +12,7 @@ export default function Sitemap() {
           <li key={route.href} className={styles["sitemap-item"]}>
             <TransitionLink props={{ href: route.href, text: route.name }} />
             {route.anchors && (
-              <ul>
+              <ul className={styles["anchors-list"]}>
                 {route.anchors.map((anchor) => (
                   <li key={anchor.id}>
                     <TransitionLink props={{ href: `${route.href}#${anchor.id}`, text: anchor.name }} />
