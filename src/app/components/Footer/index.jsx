@@ -3,25 +3,20 @@ import Link from "next/link";
 import { useTransitionRouter } from "next-view-transitions";
 import { pageanimation } from "../../../pageanimation";
 import { usePathname } from 'next/navigation'
-import useStore from '../../../stores/store'
-import { useMobile } from '../../../hooks/useMobile'
 import { routes } from '../../../data'
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
 
-  const { menuButtonIsActive, setMenuButtonIsActive } = useStore()
   const router = useTransitionRouter()
   const pathname = usePathname()
 
   const isActive = (path) => pathname === path
-    
-  const { isMobile } = useMobile()
 
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        <p>© Association Lakota Nouvelle Vision - 2025</p>
+        <p>© 2025, Association Lakota Nouvelle Vision</p>
       </div>
       <span className={styles["footer-separating-line"]}></span>
       <div className={styles.networks}>
@@ -77,51 +72,6 @@ export const Footer = () => {
             </li>
           )
         ))}
-        {/* <li>
-          <Link 
-            href="/about"
-            className={isActive("/about") ? `${styles.link} ${styles["current-link"]}` : `${styles.link}`}
-            onClick={(e) => {
-              e.preventDefault()
-              setMenuButtonIsActive(false)         
-              router.push("/about", {
-                onTransitionReady: pageanimation
-              })
-            }}
-          >
-            A propos
-          </Link>
-        </li>
-        <li>
-          <Link 
-            href="/contact"
-            className={isActive("/contact") ? `${styles.link} ${styles["current-link"]}` : `${styles.link}`}
-            onClick={(e) => {
-              e.preventDefault()
-              setMenuButtonIsActive(false)         
-              router.push("/contact", {
-                onTransitionReady: pageanimation
-              })
-            }}
-          >
-            Contact
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link 
-            href="/sitemap"
-            className={isActive("/sitemap") ? `${styles.link} ${styles["current-link"]}` : `${styles.link}`}
-            onClick={(e) => {
-              e.preventDefault()
-              setMenuButtonIsActive(false)         
-              router.push("/sitemap", {
-                onTransitionReady: pageanimation
-              })
-            }}
-          >
-            Plan du site
-          </Link>
-        </li> */}
       </ul>
     </footer>
   );
