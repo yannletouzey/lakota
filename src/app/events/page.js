@@ -12,14 +12,14 @@ export default function Events() {
             key={event.id} 
             className={`${styles.article} ${index === 0 ? styles["first-article"] : ""}`}
           >
-            <h2 className={styles.subtitle}>{event.title} <span className={styles.postDate}>Evenement du <strong>{event.date}</strong></span></h2>
+            <h2 className={styles.subtitle}>{event.title} {event.date !== "" && <span className={styles["post-date"]}>Evenement du <strong>{event.date}</strong></span>}</h2>
             <div className={styles.content}>
               <div className={styles["img-container"]}>
                 <Image className={styles.img} src={event.img[0].src} alt={event.title} width={500} height={500} />
               </div>
               <div className={styles["text-container"]}>
-                <p className={styles.postDate}>Evenement du <strong>{event.date}</strong></p>
-                <p className={styles.postContent}>{event.content}</p>
+                {event.date !== "" && <p className={styles["post-date"]}>Evenement du <strong>{event.date}</strong></p>}
+                <p className={styles.postContent} dangerouslySetInnerHTML={{ __html: event.content }} />
               </div>
             </div>
           </article>

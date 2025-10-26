@@ -75,7 +75,6 @@
     object-fit: cover;
   }
 }
-
 .section {
   --max-size: 75rem;
   display: flex;
