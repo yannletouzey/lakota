@@ -1,7 +1,56 @@
 import styles from "./Sitemap.module.css";
-import { routes } from "../../data";
 import TransitionLink from "../components/TransitionLink";
 
+const routes = [
+  { 
+    name: 'Accueil', 
+    href: '/',
+    anchors: [
+      {
+        name: 'Nos missions principales',
+        id: 'main-missions'
+      },
+      {
+        name: 'Nos convictions',
+        id: 'our-convictions'
+      },
+      {
+        name: 'Rejoignez-nous',
+        id: 'join-us'
+      }
+    ]
+  },
+  { 
+    name: 'Evenements', 
+    href: '/events'
+  },
+  { 
+    name: 'A propos', 
+    href: '/about',
+    anchors: [
+      {
+        name: 'Qui nous sommes',
+        id: 'who-we-are'
+      },
+      {
+        name: 'Pourquoi nous agissons',
+        id: 'why-we-act'
+      },
+      {
+        name: 'Notre histoire',
+        id: 'our-history'
+      },
+      {
+        name: 'L’histoire de Cécile DOGO',
+        id: 'cecile-dogo-story'
+      }
+    ]
+  },
+  {
+    name: 'Contact', 
+    href: '/contact'
+  },
+]
 export default function Sitemap() {
 
   return (

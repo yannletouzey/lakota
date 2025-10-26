@@ -5,8 +5,11 @@ import { pageanimation } from "../../../pageanimation";
 import { usePathname } from 'next/navigation'
 import { routes } from '../../../data'
 import styles from "./Footer.module.css";
+import useStore from '../../../stores/store'
 
 export const Footer = () => {
+
+  const { setMenuButtonIsActive } = useStore()
 
   const router = useTransitionRouter()
   const pathname = usePathname()

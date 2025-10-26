@@ -73,7 +73,7 @@ export default function About() {
 
         <article>
           <p>
-            Je suis <span className={styles.cecile}><strong>Cécile DOGO</strong></span>, et je souhaiterais, par cette occasion, vous raconter mon histoire et la raison de la création de <strong>l’Association Lakota Nouvelle Vision</strong>.
+            Je suis <span className="cecile"><strong>Cécile DOGO</strong></span>, et je souhaiterais, par cette occasion, vous raconter mon histoire et la raison de la création de <strong>l’Association Lakota Nouvelle Vision</strong>.
           </p>
           <p>
             Dans ma jeune enfance, j’ai traversé des épreuves difficiles qui m’ont profondément marquée. Malgré cela, j’ai trouvé la force de continuer à avancer.

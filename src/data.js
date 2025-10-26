@@ -9,20 +9,6 @@ export const routes = [
     type: 'Header',
     name: 'Accueil', 
     href: '/',
-    anchors: [
-      {
-        name: 'Nos missions principales',
-        id: 'main-missions'
-      },
-      {
-        name: 'Nos convictions',
-        id: 'our-convictions'
-      },
-      {
-        name: 'Rejoignez-nous',
-        id: 'join-us'
-      }
-    ]
   },
   { 
     type: 'Header',
@@ -33,24 +19,6 @@ export const routes = [
     type: 'Footer',
     name: 'A propos', 
     href: '/about',
-    anchors: [
-      {
-        name: 'Qui nous sommes',
-        id: 'who-we-are'
-      },
-      {
-        name: 'Pourquoi nous agissons',
-        id: 'why-we-act'
-      },
-      {
-        name: 'Notre histoire',
-        id: 'our-history'
-      },
-      {
-        name: 'L’histoire de Cécile DOGO',
-        id: 'cecile-dogo-story'
-      }
-    ]
   },
   {
     type: 'Footer',
@@ -62,10 +30,6 @@ export const routes = [
     name: 'Plan du site', 
     href: '/sitemap',
   },
-  // {
-  //   name: 'Activités',
-  //   href: '/activities'
-  // }
 ]
 
 export const events = [

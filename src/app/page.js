@@ -27,7 +27,7 @@ export default function Home() {
           <motion.div className={styles["bg-img"]} style={{ scale, opacity, transformOrigin: 'bottom center' }}>
             <Image
               className={styles.img}
-              src="/img/hero.png"
+              src="/img/main.jpg"
               alt=""
               fill
               priority
@@ -38,59 +38,97 @@ export default function Home() {
           </motion.div>
         </div>
         <div className={styles["hero-text"]}>
-          <h1>Ensemble, donnons un nouvel avenir à <span>Lakota 🌱</span></h1>
-          <p>
-            L’Association Lakota Nouvelle Vision agit pour l’éducation, la santé et la solidarité
-            à Lakota, en Côte d’Ivoire, afin de construire un avenir meilleur pour toute une
-            communauté.
-          </p>
+          <h1>LAKOTA NOUVELLE VISION 🌱 : <span>Un avenir meilleur pour les jeunes filles et femmes vulnérables.</span></h1>
         </div>
       </div>
 
       <div className={styles.content}>
-        <section aria-labelledby="missions-title" className={`${styles.missions} ${styles.section}`}>
-          <h2 id="main-missions" className={styles.anchor}>Nos missions principales</h2>
-          <div className={styles["missions-grid"]}>
-            <article>
-              <h3>Éducation</h3>
-              <p>Offrir aux jeunes, particulièrement aux filles, des opportunités d’apprentissage et d’épanouissement.</p>
-            </article>
-            <article>
-              <h3>Santé & Bien-être</h3>
-              <p>Contribuer à l’accès aux soins, à la prévention sanitaire et au soutien psychologique.</p>
-            </article>
-            <article>
-              <h3>Solidarité & Habitat</h3>
-              <p>Améliorer les conditions de vie et renforcer le lien social dans la communauté.</p>
-            </article>
-            <article>
-              <h3>Mobilisation & Partenariats</h3>
-              <p>Créer des synergies locales et internationales pour un impact durable.</p>
-            </article>
-          </div>
-        </section>
+        <section id="association-lnv" aria-labelledby="titre-association" className={`${styles.missions} ${styles.section}`}>
+          <header className={styles.header}>
+            <h2 id="titre-association">Association Lakota Nouvelle Vision (A-LNV)</h2>
+            <p className="sous-titre">Solidarité – Égalité – Engagement</p>
+          </header>
 
-        <section aria-labelledby="convictions-title" className={`${styles.convictions} ${styles.section}`}>
-          <h2 id="our-convictions" className={styles.anchor}>Nos convictions</h2>
-          <p>
-            Nous croyons que chaque action compte et que le changement durable repose sur l’engagement collectif :
-          </p>
-          <ul>
-            <li>✨ L’éducation change des vies et ouvre l’avenir</li>
-            <li>✨ La solidarité sauve des familles et renforce le lien social</li>
-            <li>✨ L’action collective transforme une communauté entière</li>
-          </ul>
-        </section>
+          <article aria-labelledby="presentation-association" className={`${styles.article} ${styles.presentation}`}>
+            <div className={styles["article-title"]}>
+              <h3 id="presentation-association">Présentation de l'association</h3>
+            </div>
+            <div className={styles["article-content"]}>
+              <img src="/img/members.png" alt="Photos des membres de l'association" />
+              <p>
+                L’association <strong>Originaires du département de Lakota (Côte d'Ivoire)</strong>, les membres fondateurs de l’association ont traversé des épreuves difficiles. Fondée en France le <time dateTime="2019-09-18">18 septembre 2019</time>, l’<abbr title="Association Lakota Nouvelle Vision">A-LNV</abbr> est aujourd’hui également enregistrée en Côte d'Ivoire.<br />Son objectif est de mobiliser toutes les énergies de cette communauté solidaire afin d’accompagner les institutions étatiques dans leur politique de lutte contre la pauvreté et d’insertion sociale.<br />L’association compte aujourd’hui plus de <strong>200 membres bénévoles</strong> à travers le monde.
+              </p>
+            </div>
+          </article>
 
-        <aside aria-labelledby="cta-title" className={`${styles.cta} ${styles.section}`}>
-          <h2 id="join-us" className={styles.anchor}>Rejoignez-nous</h2>
-          <p>
-            Devenez membre, faites un don ou participez à nos projets pour construire un nouvel avenir à Lakota. Chaque geste compte !
-          </p>
-          <div className={styles["cta-buttons"]}>
-            <a className={styles["donation-button"]} href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
-          </div>
-        </aside>
+          <article aria-labelledby="vision-valeurs" className={styles.article}>
+            <div className={styles["article-title"]}>
+              <h3 id="vision-valeurs">Notre Vision et Nos Valeurs</h3>
+            </div>
+            <div className={styles["article-content"]}>
+              <p>
+                Proposer un monde où chaque fille et chaque personne défavorisée a la possibilité de s’épanouir,  d’être respectée et de mettre en valeur son potentiel. Nous défendons leurs droits fondamentaux et favorisons un accès équitable à l’éducation, à la santé et à la justice.
+              </p>
+              <div>
+                <ul>
+                  <li>
+                    <p>⚖️ <strong>Égalité et justice</strong><br /><span>Défendre les droits de chacun sans distinction.</span></p>
+                  </li>
+                  <li>
+                    <p>🤝 <strong>Solidarité</strong><br /><span>Unir nos forces pour construire un avenir meilleur.</span></p>
+                  </li>
+                  <li>
+                    <p>🌟 <strong>Engagement</strong><br /><span>Agir concrètement pour un changement durable.</span></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article aria-labelledby="mot-presidente" id="words-president" className={styles.article}>
+            <div className={styles["article-title"]}>
+              <h3>Mot de la Présidente Fondatrice Cécile DOGO, épouse MOLLARD</h3>
+            </div>
+            <div className={styles["article-content"]}>
+              <p>
+                Marquée par son parcours de vie et animée par une profonde volonté d’aider les autres, <span className="cecile"><strong>Cécile DOGO</strong></span> a fondé l’<strong>Association Lakota Nouvelle Vision</strong> pour offrir aux jeunes filles et femmes défavorisées une chance de se reconstruire et de s’épanouir.</p>
+              <p>Entourée d’une équipe engagée, elle œuvre chaque jour pour une société plus juste, fondée sur la solidarité et l’inclusion.</p>
+              <p>
+                <a href="/about#cecile-dogo-story" className="bouton-lien" aria-label="En savoir plus sur la Présidente Fondatrice et l’histoire de l’association">
+                  En savoir plus →
+                </a>
+              </p>
+            </div>
+          </article>
+          <article className={styles.article}>
+            <div className={styles["article-title"]}>
+              <h3 id="main-missions">Notre Mission</h3>
+            </div>
+            <div className={styles["article-content"]}>
+              <p><strong>L'Association Lakota Nouvelle Vision (A-LNV)</strong> est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.</p>
+              <h4>Nous agissons principalement dans les domaines suivants:</h4>
+              <ul>
+                <li>🎓 Éducation et Formation</li>
+                <li>💚 Santé</li>
+                <li>🌿 Protection de l'environnement</li>
+                <li>🫶 Lutte contre les Violences Basées sur le Genre (VBG)</li>
+                <li>🤲 Lutte contre la pauvreté</li>
+              </ul>
+            </div>
+          </article>
+          <article className={styles.article}>
+            <div className={styles["article-title"]}>
+              <h3>NOTRE GRAND DÉFI : LE PENSIONNAT DE LAKOTA</h3>
+            </div>
+            <div className={styles["article-content"]}>
+              <p>Soutenez la construction de notre centre d'accueil et de formation à Lakota (Côte d'Ivoire).</p>
+              <p>Un refuge essentiel pour les jeunes filles victimes de violences, déscolarisées ou sans qualification, visant à leur offrir un avenir meilleur.</p>
+              <div className={styles["cta-buttons"]}>
+                <a className={styles["donation-button"]} href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
     </>
   );
