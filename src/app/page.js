@@ -95,7 +95,7 @@ export default function Home() {
               <p>Entourée d’une équipe engagée, elle œuvre chaque jour pour une société plus juste, fondée sur la solidarité et l’inclusion.</p>
               <p>
                 <a href="/about#cecile-dogo-story" className="bouton-lien" aria-label="En savoir plus sur la Présidente Fondatrice et l’histoire de l’association">
-                  En savoir plus →
+                  En savoir plus
                 </a>
               </p>
             </div>

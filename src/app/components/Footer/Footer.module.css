@@ -1,4 +1,5 @@
 .footer {
+  --color: #fff;
   min-height: var(--min-height-footer);
   display: flex;
   flex-direction: column;
@@ -15,17 +16,17 @@
   display: inline-block;
   width: 80%;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--color);
 }
 .copyright {
-  color: #fff;
+  color: var(--color);
   padding: 1rem;
 }
 .networks {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #fff;
+  color: var(--color);
   padding: 1rem;
   .title {
     font-weight: 400;
@@ -56,7 +57,7 @@
   }
 }
 .current-link {
-  color: #fff;
+  color: var(--color);
   position: relative;
 }
 .current-link::after {
@@ -69,7 +70,7 @@
   border: none;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--color);
 }
 .link {
   position: relative;
@@ -82,7 +83,7 @@
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--color);
   transform: scaleX(0);
   transform-origin: right center;
   transition: transform 0.8s cubic-bezier(.87, 0, .13, 1);
