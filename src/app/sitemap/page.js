@@ -25,6 +25,10 @@ const routes = [
     href: '/events'
   },
   { 
+    name: 'Actions et projets', 
+    href: '/actionsAndProjects'
+  },
+  { 
     name: 'A propos', 
     href: '/about',
     anchors: [
