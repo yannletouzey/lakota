@@ -1,0 +1,66 @@
+.realizations {
+  --title-height: 2.5rem;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+.article {
+  max-width: 70rem;
+}
+.article .content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.article .subtitle {
+  width: 100%;
+  background-color: var(--lakota-green);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle .post-date {
+  display: none;
+}
+.img-container {
+  width: 100%;
+  & img {
+    width: 100%; max-width: 25rem; height: auto;
+    object-fit: contain;
+  }
+}
+.text-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.text-container .post-date {
+  display: block;
+  margin: 1rem 0;
+}
+@media screen and (min-width: 48rem) {
+  .article .content {
+    flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  .img-container {
+    width: 40%;
+  }
+  .text-container {
+    width: 100%;
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .text-container .post-date {
+    display: none;
+  }
+  .subtitle .post-date {
+    display: inline;
+    margin: 0;
+  }
+}
