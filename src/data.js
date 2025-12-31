@@ -17,7 +17,7 @@ export const routes = [
   },
   { 
     type: 'Header',
-    name: 'Action et projets', 
+    name: 'Actions et projets', 
     href: '/actionsAndProjects'
   },
   { 
