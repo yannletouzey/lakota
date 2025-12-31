@@ -31,8 +31,17 @@
   --lakota-green: rgba(136, 176, 79, 1);
 
   --responsive: 48rem;
+  
+  @media screen and (min-width: 32rem) {
+    --header-height: 5rem;
+  }
+  @media screen and (min-width: 48rem) {
+    --header-height: 6rem;
+  }
+  @media screen and (min-width: 64rem) {
+    --header-height: 7rem;
+  }
 }
-
 * {
   box-sizing: border-box;
   padding: 0;

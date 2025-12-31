@@ -62,7 +62,7 @@ export default function About() {
           <p>Le but visé est d’encadrer, d’orienter et d’assister les jeunes filles, et les personnes en situation de vulnérabilité.</p>
           <p>Ces femmes s’étant battues pour avoir une situation plus favorable, ont créé cette communauté de solidarité capable de mobiliser toutes leurs synergies et leurs énergies, partageant la même vision.</p>
           <p>Par la suite, plusieurs femmes de différentes origines nous ont rejoins dans ce noble combat.</p>
-          <p>Cet engouement a fait naître <strong>L'Association Lakota Nouvelle Vision</strong> en France, notre association compte aujourd’hui plus de 200 membres à travers le monde et reste ouverte à de nouvelles adhésions.</p>
+          <p>Cet engouement a fait naître <strong>L'Association Lakota Nouvelle Vision</strong> en France, notre association compte aujourd’hui plus de <b><span className="wave-animation">200 membres</span></b> à travers le monde et reste ouverte à de nouvelles adhésions.</p>
           <p>Toutes ces femmes sont des bénévoles dans la gestion de l’association.</p>
         </article>
       </section>
@@ -70,7 +70,6 @@ export default function About() {
         <header>
           <h2 id="cecile-dogo-story" className={styles.anchor}>L’histoire de Cécile DOGO</h2>
         </header>
-
         <article>
           <p>
             Je suis <span className="cecile"><strong>Cécile DOGO</strong></span>, et je souhaiterais, par cette occasion, vous raconter mon histoire et la raison de la création de <strong>l’Association Lakota Nouvelle Vision</strong>.
@@ -102,6 +101,18 @@ export default function About() {
           </p>
         </article>
       </section>
+      <section className={styles.content} aria-labelledby="vision">
+        <header>
+          <h2 className={styles.anchor}>Notre Vision et Nos Valeurs</h2>
+        </header>
+        <article>
+          <p>
+            Notre vision est de proposer un monde où chaque fille, chaque personne défavorisée aura la possibilité de s'épanouir, d'être respectée et de mettre en valeur son potentiel.<br />
+            Nous nous engageons à défendre leurs droits fondamentaux et leur offrir un accès équitable à l'éducation, à la santé et à la justice.
+          </p>
+          <p>Égalité, justice, solidarité et engagement fond partie de nos valeurs.</p>
+        </article>
+      </section>      
     </div>
   );
 };

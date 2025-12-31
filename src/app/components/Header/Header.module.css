@@ -77,9 +77,6 @@
   }
 }
 @media screen and (min-width: 32rem) {
-  .header {
-    --header-height: 5rem;
-  }
   .logo-desktop {
     display: block;
   }
@@ -91,9 +88,6 @@
   }
 }
 @media screen and (min-width: 48rem) {
-  .header {
-    --header-height: 6rem;
-  }
   .header svg {
     top: -9px;
     width: 4rem;
@@ -106,10 +100,5 @@
   .title div span:last-child {
     font-size: 0.84rem;
     height: 14px;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .header {
-    --header-height: 7rem;
   }
 }
