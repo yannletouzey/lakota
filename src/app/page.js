@@ -46,21 +46,7 @@ export default function Home() {
         <section id="association-lnv" aria-labelledby="titre-association" className={`${styles.missions} ${styles.section}`}>
           <header className={styles.header}>
             <h2 id="titre-association" className={styles.title}>Elles ont juste besoin d'être encadrées</h2>
-            {/* <p className="sous-titre">Solidarité – Égalité – Engagement</p> */}
           </header>
-
-          {/* Introduction / Notre Mission
-L'Association Lakota Nouvelle Vision (A-LNV) est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.
-Nous agissons principalement dans les domaines suivants:
-Éducation et Formation
-Santé
-Protection de l'environnement
-Lutte contre les Violences Basées sur le Genre (VBG)
-Lutte contre la pauvreté
-
-Zoom sur le Projet Phare
-NOTRE GRAND DÉFI : LE PENSIONNAT DE LAKOTA Soutenez la construction de notre centre d'accueil et de formation à Lakota (Côte d'Ivoire). Un refuge essentiel pour les jeunes filles victimes de violences, déscolarisées ou sans qualification, visant à leur offrir un avenir meilleur. [Bouton : Je fais un don] */}
-
 
           <article aria-labelledby="presentation-association" className={`${styles.article} ${styles.presentation}`}>
             <div className={styles["article-content"]}>
