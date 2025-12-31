@@ -28,6 +28,10 @@ const routes = [
     name: 'Actions et projets', 
     href: '/actionsAndProjects'
   },
+  {
+    name: 'Nos réalisations', 
+    href: '/realizations'
+  },
   { 
     name: 'A propos', 
     href: '/about',
@@ -47,6 +51,10 @@ const routes = [
       {
         name: 'L’histoire de Cécile DOGO',
         id: 'cecile-dogo-story'
+      },
+      {
+        name: 'Notre vision et nos valeurs',
+        id: 'our-vision'
       }
     ]
   },
@@ -54,6 +62,10 @@ const routes = [
     name: 'Contact', 
     href: '/contact'
   },
+  {
+    name: 'Plan de site', 
+    href: '/sitemap'
+  }
 ]
 export default function Sitemap() {
 

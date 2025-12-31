@@ -103,7 +103,7 @@ export default function About() {
       </section>
       <section className={styles.content} aria-labelledby="vision">
         <header>
-          <h2 className={styles.anchor}>Notre Vision et Nos Valeurs</h2>
+          <h2 id="our-vision" className={styles.anchor}>Notre Vision et Nos Valeurs</h2>
         </header>
         <article>
           <p>
