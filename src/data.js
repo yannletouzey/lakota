@@ -16,6 +16,11 @@ export const routes = [
     href: '/events'
   },
   { 
+    type: 'Header',
+    name: 'Action et projets', 
+    href: '/actionsAndProjects'
+  },
+  { 
     type: 'Footer',
     name: 'A propos', 
     href: '/about',

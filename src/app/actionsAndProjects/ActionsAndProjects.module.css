@@ -1,0 +1,12 @@
+.actions-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  & h1, & h2 {
+    margin-bottom: 1rem;
+  }
+  & p {
+    margin: 0.5rem 1rem;
+    text-align: left;
+  }
+}
