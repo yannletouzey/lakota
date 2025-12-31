@@ -5,24 +5,23 @@ import { realizations } from "../../data";
 export default function Realizations() {
   return (
     <div className={styles.realizations}>
-      <h1 className={styles.title}>Réalisations</h1>
+      <h1 className={styles.title}>Nos réalisations</h1>
+      <p className={styles["presentation-text"]}>
+        Découvrez les actions concrètes que nous avons menées pour transformer des vies et contribuer au développement de nos communautés, de la Côte d'Ivoire à la France.<br /> Chaque date marque une étape dans notre engagement.
+      </p>
+
       <section>
-        {realizations.map((item, index) => (
-          <article 
-            key={item.id} 
-            className={`${styles.article} ${index === 0 ? styles["first-article"] : ""}`}
-          >
-            <h2 className={styles.subtitle}>{item.title} {item.date !== "" && <span className={styles["post-date"]}>{item.date}</span>}</h2>
-            <div className={styles.content}>
-              {/* <div className={styles["img-container"]}>
-                <Image className={styles.img} src={item.img[0].src} alt={item.title} width={500} height={500} />
-              </div> */}
-              <div className={styles["text-container"]}>
-                {item.date !== "" && <p className={styles["post-date"]}>Evenement du <strong>{item.date}</strong></p>}
-                <p className={styles.postContent} dangerouslySetInnerHTML={{ __html: item.content }} />
+        {realizations.map((item) => (
+          <div key={item.id} className={styles.article}>
+            <h2 className={styles.subtitle}>{item.title}</h2>
+            {item.content.map((event, idx) => (
+              <div key={`${item.id}-${idx}`} className={styles.event}>
+                <h3>{event.subtitle}</h3>
+                <p className={styles.date}><strong>{event.date}</strong></p>
+                <p className={styles.text}>{event.content}</p>
               </div>
-            </div>
-          </article>
+            ))}
+          </div>
         ))}
       </section>
     </div>

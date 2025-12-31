@@ -1,66 +1,51 @@
 .realizations {
   --title-height: 2.5rem;
-}
-.title {
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #fff;
-}
-.article {
-  max-width: 70rem;
-}
-.article .content {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  align-items: center;
 }
-.article .subtitle {
-  width: 100%;
-  background-color: var(--lakota-green);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+.presentation-text {
+  margin-bottom: 2rem;
+  max-width: 1000px;
 }
-.subtitle .post-date {
-  display: none;
-}
-.img-container {
-  width: 100%;
-  & img {
-    width: 100%; max-width: 25rem; height: auto;
-    object-fit: contain;
-  }
-}
-.text-container {
-  width: 100%;
+.title {
   margin-bottom: 2rem;
 }
-.text-container .post-date {
-  display: block;
+.article {
+  position: relative;
+  margin-bottom: 4rem;
+  max-width: 1000px;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+}
+
+
+.subtitle {
+  margin: 0 0.5rem 1rem;
+}
+.event {
   margin: 1rem 0;
+  & h3 {
+    margin: 0 1rem 1rem;
+  }
+}
+.date {
+  margin: 0 1.5rem 0.5rem;
+}
+.text {
+  margin: 1rem 1.5rem 2rem;
 }
 @media screen and (min-width: 48rem) {
-  .article .content {
-    flex-direction: row;
-    padding: 2rem 1rem;
-  }
-  .img-container {
-    width: 40%;
-  }
-  .text-container {
-    width: 100%;
-    /* width: 60%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem;
-  }
-  .text-container .post-date {
-    display: none;
-  }
-  .subtitle .post-date {
-    display: inline;
-    margin: 0;
+  .realizations {
+    padding: 3rem;
   }
 }
