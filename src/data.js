@@ -36,7 +36,7 @@ export const events = [
   {
     id: 1,
     title: "Célebration de la solidarité",
-    content: "Rejoignez-nous pour la Célébration de la solidarité <strong>Créteil 2025</strong> ! 🤝 Venez passer un moment de partage et de convivialité le <span class='wave-animation'>samedi 22 novembre à partir de 10h</span>, au 21 rue Charles Beuvin. ​Au programme : exposition, sensibilisation, coaching, table ronde, et une soirée animée ! Ne manquez pas le dîner solidaire (sur inscription) à l'Espace Jean Ferrat. ​Pour plus d'informations, contactez le 06 60 77 73 74 +2250709440127",
+    content: "Rejoignez-nous pour la Célébration de la solidarité <strong>Créteil 2025</strong> ! 🤝 Venez passer un moment de partage et de convivialité le <span class='wave-animation'>samedi 22 novembre à partir de 10h</span>, au 21 rue Charles Beuvin. ​Au programme : exposition, sensibilisation, coaching, table ronde et une soirée animée ! Ne manquez pas le dîner solidaire (sur inscription) à l'Espace Jean Ferrat. ​Pour plus d'informations, contactez le 06 60 77 73 74 +2250709440127",
     date: "22 novembre 2025",
     img: [
       {

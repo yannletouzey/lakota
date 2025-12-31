@@ -30,7 +30,7 @@
   --bg-color-black: #000;
   --lakota-green: rgba(136, 176, 79, 1);
 
-  --responsive: 768px;
+  --responsive: 48rem;
 }
 
 * {

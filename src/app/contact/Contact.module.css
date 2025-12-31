@@ -1,11 +1,24 @@
 .contact {
-
+  padding: 1rem;
 }
 .title {
-  
+  padding-bottom: 1rem;
 }
-.contact-container {
-  
+.subtitle {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.subtitle-h3 {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.paragraph {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.address, .contact-list {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
 }
 .countries {
   padding: 1rem;
@@ -31,4 +44,13 @@
 .item {
   display: inline-block;
   padding: 0.2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .contact {
+    padding: 2rem;
+  }
+  .title {
+    padding-bottom: 2rem;
+  }
 }
