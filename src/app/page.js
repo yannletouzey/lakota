@@ -45,41 +45,38 @@ export default function Home() {
       <div className={styles.content}>
         <section id="association-lnv" aria-labelledby="titre-association" className={`${styles.missions} ${styles.section}`}>
           <header className={styles.header}>
-            <h2 id="titre-association">Association Lakota Nouvelle Vision (A-LNV)</h2>
-            <p className="sous-titre">Solidarité – Égalité – Engagement</p>
+            <h2 id="titre-association" className={styles.title}>Elles ont juste besoin d'être encadrées</h2>
+            {/* <p className="sous-titre">Solidarité – Égalité – Engagement</p> */}
           </header>
 
+          {/* Introduction / Notre Mission
+L'Association Lakota Nouvelle Vision (A-LNV) est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.
+Nous agissons principalement dans les domaines suivants:
+Éducation et Formation
+Santé
+Protection de l'environnement
+Lutte contre les Violences Basées sur le Genre (VBG)
+Lutte contre la pauvreté
+
+Zoom sur le Projet Phare
+NOTRE GRAND DÉFI : LE PENSIONNAT DE LAKOTA Soutenez la construction de notre centre d'accueil et de formation à Lakota (Côte d'Ivoire). Un refuge essentiel pour les jeunes filles victimes de violences, déscolarisées ou sans qualification, visant à leur offrir un avenir meilleur. [Bouton : Je fais un don] */}
+
+
           <article aria-labelledby="presentation-association" className={`${styles.article} ${styles.presentation}`}>
-            <div className={styles["article-title"]}>
-              <h3 id="presentation-association">Présentation de l'association</h3>
-            </div>
             <div className={styles["article-content"]}>
               <img src="/img/members.png" alt="Photos des membres de l'association" />
-              <p>
-                L’association <strong>Originaires du département de Lakota (Côte d'Ivoire)</strong>, les membres fondateurs de l’association ont traversé des épreuves difficiles. Fondée en France le <time dateTime="2019-09-18">18 septembre 2019</time>, l’<abbr title="Association Lakota Nouvelle Vision">A-LNV</abbr> est aujourd’hui également enregistrée en Côte d'Ivoire.<br />Son objectif est de mobiliser toutes les énergies de cette communauté solidaire afin d’accompagner les institutions étatiques dans leur politique de lutte contre la pauvreté et d’insertion sociale.<br />L’association compte aujourd’hui plus de <strong>200 membres bénévoles</strong> à travers le monde.
-              </p>
-            </div>
-          </article>
-
-          <article aria-labelledby="vision-valeurs" className={styles.article}>
-            <div className={styles["article-title"]}>
-              <h3 id="vision-valeurs">Notre Vision et Nos Valeurs</h3>
-            </div>
-            <div className={styles["article-content"]}>
-              <p>
-                Proposer un monde où chaque fille et chaque personne défavorisée a la possibilité de s’épanouir,  d’être respectée et de mettre en valeur son potentiel. Nous défendons leurs droits fondamentaux et favorisons un accès équitable à l’éducation, à la santé et à la justice.
-              </p>
-              <div>
+              <div className={styles["article-text"]}>
+                <h3 id="presentation-association" className={styles["article-title"]}>Notre Mission</h3>
+                <p>
+                  L'<strong>Association Lakota Nouvelle Vision</strong> (A-LNV) est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.
+                </p>
+                <h4>Nous agissons principalement dans les domaines suivants:</h4>
                 <ul>
-                  <li>
-                    <p>⚖️ <strong>Égalité et justice</strong><br /><span>Défendre les droits de chacun sans distinction.</span></p>
-                  </li>
-                  <li>
-                    <p>🤝 <strong>Solidarité</strong><br /><span>Unir nos forces pour construire un avenir meilleur.</span></p>
-                  </li>
-                  <li>
-                    <p>🌟 <strong>Engagement</strong><br /><span>Agir concrètement pour un changement durable.</span></p>
-                  </li>
+                  <li><p>🎓 <span>Éducation et Formation</span></p></li>
+                  <li><p>💚 <span>Santé</span></p></li>
+                  <li><p>🌿 <span>Protection de l'environnement</span></p></li>
+                  <li><p>🫶 <span>Lutte contre les Violences Basées sur le Genre (VBG)</span></p></li>
+                  <li><p>🤲 <span>Lutte contre la pauvreté</span></p></li>
                 </ul>
               </div>
             </div>
@@ -98,22 +95,6 @@ export default function Home() {
                   En savoir plus
                 </a>
               </p>
-            </div>
-          </article>
-          <article className={styles.article}>
-            <div className={styles["article-title"]}>
-              <h3 id="main-missions">Notre Mission</h3>
-            </div>
-            <div className={styles["article-content"]}>
-              <p><strong>L'Association Lakota Nouvelle Vision (A-LNV)</strong> est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.</p>
-              <h4>Nous agissons principalement dans les domaines suivants:</h4>
-              <ul>
-                <li>🎓 Éducation et Formation</li>
-                <li>💚 Santé</li>
-                <li>🌿 Protection de l'environnement</li>
-                <li>🫶 Lutte contre les Violences Basées sur le Genre (VBG)</li>
-                <li>🤲 Lutte contre la pauvreté</li>
-              </ul>
             </div>
           </article>
           <article className={styles.article}>

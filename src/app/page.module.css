@@ -88,12 +88,17 @@
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: clamp(0.5rem, 3vw, 2rem);
 }
+.title {
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  margin-bottom: clamp(0.5rem, 3vw, 2rem);
+}
 .article {
   padding: 0 1rem;
   max-width: var(--max-size);
 }
 .article-title {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 .article-content {
@@ -116,9 +121,27 @@
     padding: 0 0.5rem;
     & li {
       margin-bottom: 0.5rem;
+      & span {
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: '';
+          transition: width  0.3s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background: #000;
+        }
+        &:hover&::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
+
 .article:nth-of-type(2) .article-content {
   & > p {
     margin-bottom: 1rem;
@@ -136,9 +159,9 @@
 }
 
 @media screen and (min-width: 400px) {
-  .article-title {
-    margin: 2rem 0;
-  }
+  /* .article-title {
+    margin: 1rem 0;
+  } */
   .article-content {
     & img {
       width: 60%;
@@ -154,6 +177,11 @@
     & p {
       line-height: 1.5rem;
     }
+  }
+  .article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .article:first-of-type .article-content {
     display: flex;
