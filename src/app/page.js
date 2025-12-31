@@ -31,7 +31,7 @@ export default function Home() {
               alt=""
               fill
               priority
-              onLoadingComplete={() =>
+              onLoad={() =>
                 window.requestAnimationFrame(() => window.dispatchEvent(new Event('resize')))
               }
             />
