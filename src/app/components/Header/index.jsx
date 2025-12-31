@@ -2,6 +2,7 @@ import styles from "./Header.module.css";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header = () => {  
 
@@ -9,7 +10,13 @@ export const Header = () => {
     <header className={styles.header}>
       <Link href="/" className={styles.title}>
         <div className={styles["logo-desktop"]}>
-          <img src="/logos/lakota-logo.jpg" alt="" className={styles["logo-img"]} />
+          <Image 
+            src="/logos/lakota-logo.jpg" 
+            alt="" 
+            width={500} 
+            height={500} 
+            className={styles["logo-img"]} 
+          />
         </div>
         <div className={styles["logo-mobile"]}>
           <div className={styles["title-logo"]}>
