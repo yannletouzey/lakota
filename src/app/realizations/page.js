@@ -1,5 +1,4 @@
 import styles from "./Realization.module.css";
-import Image from "next/image";
 import { realizations } from "../../data";
 
 export default function Realizations() {
