@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import styles from "./page.module.css";
+import TransitionLink from "./components/TransitionLink";
 
 export default function Home() {
 
@@ -54,7 +55,7 @@ export default function Home() {
               <div className={styles["article-text"]}>
                 <h3 id="presentation-association" className={styles["article-title"]}>Notre Mission</h3>
                 <p>
-                  L'<strong>Association Lakota Nouvelle Vision</strong> (A-LNV) est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.
+                  L'<a href="/about#about-asso"><strong>Association Lakota Nouvelle Vision</strong></a> (A-LNV) est une organisation à but non lucratif créée en septembre 2019. Nous œuvrons en France et en Afrique, particulièrement en Côte d'Ivoire, pour l'encadrement, l'orientation et l'assistance des jeunes filles et des personnes en situation de vulnérabilité.
                 </p>
                 <h4>Nous agissons principalement dans les domaines suivants:</h4>
                 <ul>
@@ -69,12 +70,10 @@ export default function Home() {
           </article>
 
           <article aria-labelledby="mot-presidente" id="words-president" className={styles.article}>
-            <div className={styles["article-title"]}>
-              <h3>Mot de la Présidente Fondatrice Cécile DOGO, épouse MOLLARD</h3>
-            </div>
             <div className={styles["article-content"]}>
+              <h3 id="mot-presidente" className={styles["article-title"]}>Mot de la Présidente Fondatrice Cécile DOGO, épouse MOLLARD</h3>
               <p>
-                Marquée par son parcours de vie et animée par une profonde volonté d’aider les autres, <span className="cecile"><strong>Cécile DOGO</strong></span> a fondé l’<strong>Association Lakota Nouvelle Vision</strong> pour offrir aux jeunes filles et femmes défavorisées une chance de se reconstruire et de s’épanouir.</p>
+                Marquée par son parcours de vie et animée par une profonde volonté d’aider les autres, <a href="/about#cecile-dogo-story"><span className="cecile"><strong>Cécile DOGO</strong></span></a> a fondé l’<a href="/about#about-asso"><strong>Association Lakota Nouvelle Vision</strong></a> pour offrir aux jeunes filles et femmes défavorisées une chance de se reconstruire et de s’épanouir.</p>
               <p>Entourée d’une équipe engagée, elle œuvre chaque jour pour une société plus juste, fondée sur la solidarité et l’inclusion.</p>
               <p>
                 <a href="/about#cecile-dogo-story" className="bouton-lien" aria-label="En savoir plus sur la Présidente Fondatrice et l’histoire de l’association">
@@ -85,9 +84,9 @@ export default function Home() {
           </article>
           <article className={styles.article}>
             <div className={styles["article-title"]}>
-              <h3>NOTRE GRAND DÉFI : LE PENSIONNAT DE LAKOTA</h3>
             </div>
             <div className={styles["article-content"]}>
+              <h3 className={styles["article-title"]}>NOTRE GRAND DÉFI : LE PENSIONNAT DE LAKOTA</h3>
               <p>Soutenez la construction de notre centre d'accueil et de formation à Lakota (Côte d'Ivoire).</p>
               <p>Un refuge essentiel pour les jeunes filles victimes de violences, déscolarisées ou sans qualification, visant à leur offrir un avenir meilleur.</p>
               <div className={styles["cta-buttons"]}>

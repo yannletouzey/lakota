@@ -95,6 +95,7 @@
 }
 .article {
   padding: 0 1rem;
+  width: 100%;
   max-width: var(--max-size);
 }
 .article-title {

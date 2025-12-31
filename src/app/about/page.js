@@ -10,7 +10,7 @@ export default function About() {
       >
         Ensemble, faisons grandir l’espoir à <span>Lakota 🌱</span>
       </h1>
-      <section className={styles.content}>
+      <section className={styles.content} id="about-asso">
         <header>
           <h2
             id="association-title" 
