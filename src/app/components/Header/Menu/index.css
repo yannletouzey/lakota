@@ -5,7 +5,7 @@
   top: 0;
   right: calc(0px - var(--width-navbar));
   width: var(--width-navbar); height: 100vh;
-  background-color: var(--bg-color-footer);
+  background-color: var(--bg-color-navbar);
   transition: right 0.3s ease-in-out;
   background-color: #000;
   ul {
@@ -60,7 +60,7 @@
   width: 0.5rem;
   height: 0.5rem;
   border: 1px solid rgb(244, 241, 241);
-  background-color: var(--bg-color-footer);
+  background-color: var(--color-current-link);
 }
 @media screen and (min-width: 800px) {
   .navbar {
