@@ -51,6 +51,19 @@ export const Footer = () => {
               />
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lakota-nouvelle-vision-6bb655216/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/logos/linkedin.png" 
+                alt="Logo du site internet Linkedin" 
+                aria-label="Logo du site internet Linkedin" 
+              />
+            </a>
+          </li>
         </ul>
       </div>
       <span className={styles["footer-separating-line"]}></span>
