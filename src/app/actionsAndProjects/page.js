@@ -7,7 +7,7 @@ export default function Events() {
       <h1 className={styles.title}>Actions et Projets</h1>
       <h2>Notre Projet Phare : Le Pensionnat de Jeunes Filles à Lakota</h2>
       <p>
-        Notre objectif majeur est la construction, à <strong>Lakota (Côte d'Ivoire)</strong>, d'un centre d'accueil et de formation pour les jeunes filles et femmes en situation précaire.<br />
+        Notre objectif majeur est la construction, à <strong><span className="lakota">Lakota</span> (Côte d'Ivoire)</strong>, d'un centre d'accueil et de formation pour les jeunes filles et femmes en situation précaire.<br />
         Ce centre est conçu pour être un édifice porteur d'espoir, offrant un refuge sécurisé et des programmes de réinsertion.
       </p>
       <p>

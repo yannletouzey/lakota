@@ -23,8 +23,8 @@ export default function Contact() {
         <span className={styles.item} itemProp="streetAddress">Bâtiment D2</span><br />
         <span className={styles.item} itemProp="postalCode">94000</span> <span className={styles.item} itemProp="addressLocality">Créteil</span>, Val-de-Marne <span className={styles.item} itemProp="addressCountry">France</span><br /> 
       </address>
-      <ul className={styles["contact-list"]}>
-        <li><span className={styles.item}>Téléphone : +33 6 60 77 73 74</span></li>
+      <ul className={styles["contact-list"]} itemScope>
+        <li><span className={styles.item} itemProp="phone">Téléphone : +33 6 60 77 73 74</span></li>
         <li><span className={styles.item}>Email : <a href="mailto:as.lakotanouvellevision@outlook.fr" itemProp="email">as.lakotanouvellevision@outlook.fr</a></span></li>
       </ul>
     </div>
