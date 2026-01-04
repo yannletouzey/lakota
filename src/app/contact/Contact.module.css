@@ -1,5 +1,8 @@
 .contact {
   padding: 1rem;
+  & a {
+    margin: 0 0.5rem 1rem;
+  }
 }
 .title {
   padding-bottom: 1rem;
@@ -13,8 +16,7 @@
   padding-bottom: 1rem;
 }
 .paragraph {
-  padding-left: 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
 }
 .address, .contact-list {
   padding-left: 0.5rem;

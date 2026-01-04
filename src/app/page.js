@@ -90,7 +90,7 @@ export default function Home() {
               <p>Soutenez la construction de notre centre d'accueil et de formation à Lakota (Côte d'Ivoire).</p>
               <p>Un refuge essentiel pour les jeunes filles victimes de violences, déscolarisées ou sans qualification, visant à leur offrir un avenir meilleur.</p>
               <div className={styles["cta-buttons"]}>
-                <a className={styles["donation-button"]} href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
+                <a className="donation-button" href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
               </div>
             </div>
           </article>

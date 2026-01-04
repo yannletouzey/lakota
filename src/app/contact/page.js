@@ -6,13 +6,15 @@ export default function Contact() {
   return (
     <div className={styles.contact}>
       <h1 className={styles.title}>NOUS SOUTENIR / CONTACT</h1>
-      
-      <h2 className={styles.subtitle}>Faire un Don et Devenir Mécène</h2>
+      <h2 className={styles.subtitle}>FAIRE UN DON ET DEVENIR MÉCÈNE</h2>
       <p className={styles.paragraph}>
         Nous avons besoin de vous pour bâtir cet édifice merveilleux et continuer à semer l'espoir.
         <br />Votre soutien est essentiel pour la réalisation effective de tous les travaux de construction du centre.
         <br />Nous sommes ouverts à la discussion pour des partenariats et disposons d'un Dossier de Mécénat et de Demande de Subvention.
       </p>
+      <a className="donation-button" href="https://www.helloasso.com/associations/association-lakota-nouvelle-vision/formulaires/4" target="_blank" rel="noopener noreferrer">Faire un don</a>
+      <div className={styles["cta-buttons"]}>
+      </div>
       <h2 className={styles.subtitle}>DEVENONS PARTENAIRES</h2>
       <h3 className={styles["subtitle-h3"]}>Contactez-Nous</h3>
       <address className={styles.address} itemScope>
