@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./About.module.css";
 
 export default function About() {
@@ -74,6 +75,9 @@ export default function About() {
           <p>
             Je suis <span className="cecile"><strong>Cécile DOGO</strong></span>, et je souhaiterais, par cette occasion, vous raconter mon histoire et la raison de la création de <strong>l’Association Lakota Nouvelle Vision</strong>.
           </p>
+          <div className={styles["img-cecile-container"]}>
+            <Image src="/img/cecile-dogo2.png" alt="Phote de Cécile DOGO posant les bras croisés" width={300} height={300} className={styles["cecile-dogo"]}/>
+          </div>
           <p>
             Dans ma jeune enfance, j’ai traversé des épreuves difficiles qui m’ont profondément marquée. Malgré cela, j’ai trouvé la force de continuer à avancer.
             À l'âge de 15 ans, j’ai donné naissance à un magnifique enfant.

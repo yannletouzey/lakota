@@ -11,7 +11,7 @@ export const Header = () => {
       <Link href="/" className={styles.title}>
         <div className={styles["logo-desktop"]}>
           <Image 
-            src="/logos/lakota-logo.JPG" 
+            src="/logos/lakota-logo.png" 
             alt="" 
             width={500} 
             height={500} 
