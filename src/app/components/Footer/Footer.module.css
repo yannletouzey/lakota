@@ -38,6 +38,8 @@
   & li {
     width: 2rem; height: 2rem;
     margin: 0.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
     & .link {
       text-decoration: none;
     }
