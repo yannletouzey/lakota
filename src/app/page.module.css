@@ -94,9 +94,10 @@
   margin-bottom: clamp(0.5rem, 3vw, 2rem);
 }
 .article {
-  padding: 0 1rem;
   width: 100%;
   max-width: var(--max-size);
+  margin: 0.8em 0;
+  padding: 0 1rem;
 }
 .article-title {
   margin: 0.5rem 0;
@@ -160,9 +161,6 @@
 }
 
 @media screen and (min-width: 400px) {
-  /* .article-title {
-    margin: 1rem 0;
-  } */
   .article-content {
     & img {
       width: 60%;
@@ -173,6 +171,9 @@
   }
 }
 @media screen and (min-width: 800px) {
+  .article {
+    margin: 1.2em 0;
+  }
   .article-content {
     padding: 0 1rem;
     & p {
